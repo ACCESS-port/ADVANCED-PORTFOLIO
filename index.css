@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:blue ;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(to right, red,orange);
+    background-color: aqua;
+    color:chartreuse;
+    border-radius: 10px;
+    margin-top: 300px;
+    margin-right:300px;
+    margin-left: 300px;
+    justify-content: center;
+    text-align: center;
+    animation:  slideDown 2s ;
+      
+}
+.welcome{
+
+    background-color: cornflowerblue;
+    padding:230px;
+    padding-bottom: 100px;
+    padding-top:100px ;
+    
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.container{
+    display: inline-block;
+    
+
+}
+
+
+.bg{
+    height: 200px;
+    width: 1000px;
+    margin-top: 50px;
+    background: linear-gradient(to right,orange,red);
+    display: flex;
+    justify-content: center;
+   overflow-x: hidden;
+   border-radius: 20px;
+   border: 4px solid black;
+   animation: rotate 2s ;
+   margin-left: 150px;
+   
+   
+    
+    
+}
+
+.slide{
+
+    width: 999px;
+    height: 195px;
+    display: flex;
+    
+}
+
+
+
+   
+
+.box1{
+   flex: 0 0 auto;
+    height: 50pxpx;
+    width: 18%;
+    margin: 10px; 
+    animation: slide linear infinite 5s;
+    background: linear-gradient(to right, brown,blue);
+    text-align: center;
+    padding-top: 6%;
+    color: chartreuse;
+    border: 3px solid  limegreen;
+    border-radius: 10px;
+    -webkit-text-stroke: 1px green;
+    
+    
+      
+}
+
+
+
+
+.box2{
+   flex: 0 0 auto;
+     height: 50pxpx;
+    width: 18%;
+   background: linear-gradient(to right, brown,blue);
+    margin: 10px;
+    animation: slide linear infinite 5s;
+    text-align: center;
+    padding-top: 6%;
+    color: chartreuse;
+     border: 3px solid  limegreen;
+    border-radius: 10px;
+    -webkit-text-stroke: 1px green;
+}
+
+.box3{
+    flex: 0 0 auto;
+ height: 50pxpx;
+    width: 18%;
+  background: linear-gradient(to right, brown,blue);
+    margin: 10px;
+    animation: slide linear infinite 5s;
+    text-align: center;
+    padding-top: 6%;
+    color: chartreuse;
+     border: 3px solid  limegreen;
+    border-radius: 10px;
+    -webkit-text-stroke: 1px green;
+}
+
+.box4{
+    flex: 0 0 auto;
+text-align: center;
+     height: 50pxpx;
+    width: 18%;
+   background: linear-gradient(to right, brown,blue);
+    margin: 10px;
+    animation: slide  linear  infinite 5s;
+    padding-top: 6%;
+    color: chartreuse;
+     border: 3px solid  limegreen;
+    border-radius: 10px;
+    -webkit-text-stroke: 1px green;
+}
+
+.box5{
+    flex: 0 0 auto;
+text-align: center;
+     height: 50pxpx;
+    width: 18%;
+    background: linear-gradient(to right, brown,blue);
+    margin: 10px;
+    animation: slide linear infinite 5s;
+    padding-top: 6%;
+    color: chartreuse;
+     border: 3px solid  limegreen;
+    border-radius: 10px;
+    -webkit-text-stroke: 1px green;
+}
+
+@keyframes slide{
+
+    from{
+        transform: translateX(0px);
+    }
+  
+  to{
+    transform: translateX(-1000px);
+  }
+}
+
+@keyframes rotate{
+
+    from{
+        transform: rotate(0deg);
+    }
+    to{ 
+        transform: rotate(360deg);
+    }
+}
+
+  
+
