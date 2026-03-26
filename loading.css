@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensures borders don't break layout */
+}
+
+body {
+    /* Full viewport height layout */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Light grey background for better contrast */
+    font-family: sans-serif;
+}
+
+.box {
+    /* Responsive Width: 90% on mobile, max 350px on desktop */
+    width: 90%;
+    max-width: 350px;
+    height: 450px;
+    
+    background-color: #e74c3c; /* Softer, modern red */
+    border-radius: 15px;
+    border: 4px solid #27ae60; /* Nice green */
+    
+    /* Centering content inside the box vertically and horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Professional drop shadow */
+}
+
+.first {
+    /* Removed huge padding hacks - Flexbox handles centering now */
+    color: cornflowerblue;
+    font-weight: 800; /* Fixed: removed 'px' */
+    font-size: 24px;
+    margin-bottom: 40px; /* Space between text and circle */
+    text-align: center;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: #c0392b; /* Slightly darker red for the circle */
+    border-radius: 50%;
+    
+    /* Spinner Styling */
+    border: 4px solid #bdc3c7; /* Grey sides */
+    border-top: 4px solid #000; /* Black top */
+    
+    /* Added Animation */
+    animation: spin 1.5s linear infinite;
+    
+    /* Removed margin hacks - Flexbox handles centering */
+}
+
+/* The Animation Definition */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 400px) {
+    .box {
+        height: 400px; /* Slightly shorter on very small screens */
+    }
+    .first {
+        font-size: 20px;
+    }
+}
