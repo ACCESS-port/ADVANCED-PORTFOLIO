@@ -62,11 +62,3 @@ body {
 
 
 /* Mobile Adjustments */
-@media (max-width: 400px) {
-    .box {
-        height: 400px; /* Slightly shorter on very small screens */
-    }
-    .first {
-        font-size: 20px;
-    }
-}
