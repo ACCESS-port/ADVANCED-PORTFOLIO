@@ -53,16 +53,13 @@ body {
     border-top: 4px solid #000; /* Black top */
     
     /* Added Animation */
-    animation: spin 1.5s linear infinite;
+    
     
     /* Removed margin hacks - Flexbox handles centering */
 }
 
 /* The Animation Definition */
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
+
 
 /* Mobile Adjustments */
 @media (max-width: 400px) {
